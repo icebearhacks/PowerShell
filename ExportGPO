@@ -1,0 +1,3 @@
+Import-Module GroupPolicy 
+
+Get-GPO -all | % { Get-GPOReport -GUID $_.id -ReportType HTML -Path "C:\YOUR_FILE_PATH\$($_.displayName).html" } 
