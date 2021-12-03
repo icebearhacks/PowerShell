@@ -1,0 +1,3 @@
+#Get Folder size 
+
+Get-foldersize -BasePath 'File Path here' -FolderName 'Folder Name here'
