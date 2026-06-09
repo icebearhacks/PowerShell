@@ -1,0 +1,4 @@
+cd "$env:USERPROFILE\Downloads\Photos-3-001"
+Get-ChildItem *.HEIC | ForEach-Object {
+    ffmpeg -i $_.FullName "$($_.DirectoryName)\$($_.BaseName).png" -y
+}
